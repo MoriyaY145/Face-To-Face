@@ -1,0 +1,42 @@
+.home-page {
+  display: flex;
+  height: 100vh;
+  background-color: #000000;
+  color: white;
+}
+
+.left-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.left-image {
+  width: 100%; /* Adjust this value to make the image larger or smaller */
+  height: auto;
+  max-height: 100%;
+}
+
+.right-content {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 0.8em; /* Adjust this value to increase the overall font size */
+}
+
+.right-content h2 {
+  font-size: 2em; /* Increase this value for larger headings */
+}
+
+.right-content p {
+  font-size: 1.5em; /* Increase this value for larger paragraph text */
+}
+
+.right-content ul {
+  font-size: 1.5em; /* Increase this value for larger list text */
+}

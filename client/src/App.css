@@ -1,0 +1,54 @@
+body {
+  direction: rtl;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+.navbar {
+  list-style-type: none;
+  padding: 0;
+  margin: 0; /* Remove default margin */
+  display: flex;
+  align-items: center;
+  background-color: #f78605;
+  height: 60px; /* Set a fixed height for the navbar */
+  position: fixed; /* Fix the navbar at the top */
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Ensure the navbar is on top of other content */
+}
+
+.navbar li {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: rgb(12, 12, 12);
+  padding: 14px 20px;
+  display: block;
+  transition: background-color 0.3s ease;
+  font-size: 25px;
+}
+
+.nav-link:hover {
+  background-color: rgb(168, 113, 36);
+}
+
+.navbar-logo {
+  width: 40px; /* Adjust size as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Adjust spacing between logo and links */
+}
+
+/* Ensure the main content does not overlap the navbar */
+.main-content {
+  padding-top: 60px; /* Add padding equal to the height of the navbar */
+  margin: 0;
+  background-color: #000; /* Match background color of your page */
+  color: #fff; /* Set text color to match your design */
+}
